@@ -74,6 +74,10 @@ nav div{
     background-color: white;
 }
 
+.cont{
+    width: 75%;
+    margin: 0 auto;
+}
 
 /* first section */
 .flexbox-row{
@@ -149,9 +153,9 @@ nav div{
     padding-block: 12em;
     gap: 3em;
 }
+
 .cont-title{
     height: 200px;
-    width: 65%;
     background-color: white;
 }
 .cont-title .title{
@@ -160,14 +164,14 @@ nav div{
 }
 
 .fourth-sec-img{
-    width:65%;
+
     height: 500px;
     background-color: white;
 }
 
 .cont-btn{
     height: 150px;
-    width: 35%;
+    width: 55%;
     background-color: white;
 }
 .cont-btn .title{
@@ -178,17 +182,15 @@ nav div{
 footer{
     background-color: black;
 }
-#cont{
-    width: 65%;
-    margin: 0 auto;
-}
+
 
 .flex{
     display: flex;
     justify-content: space-between;
     gap: 5px;
 }
-#cont{
+
+.pad{
     padding-block: 9em;
 }
 .col{
@@ -196,19 +198,19 @@ footer{
     width: 15%;
     background-color: var(--darkGray);
     border: 1px white solid;
-    
 }
 .mgn{
     width: 30%;   
 }
-
-hr{
+hr.cont{
     margin-block: 20px;
 }
+
 .flex-f{
     display: flex;
     justify-content: space-between;
 }
+
 .btn{
     flex-basis: 100px;
     height: 50px;
