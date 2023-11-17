@@ -4,7 +4,10 @@
     box-sizing: border-box;
     /* border: 1px solid red; */
 }
+:root{
+    --darkGray: #383838;
 
+}
 /* header */
 header{
     background-color: #4673ec;
@@ -19,28 +22,27 @@ nav{
 }
 
 /* element dimension */
-#logo, .access, #searchbar{
+#logo, .access, #links{
     flex-basis: 100px;
     height: 50px;
-    background-color: #000000;
+    background-color: var(--darkGray);
+    border: 1px white solid;
 }
-
-#searchbar{
+#links{
     flex-basis: 30%;
 }
-
-
 nav div{
     margin-block: 20px;
 }
 
+
 /* flexed banner */
 #banner{
-    height: 600px;
+    padding-block: 8em;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+
 
 /* flexed white banner */
 .inner-banner{
@@ -50,7 +52,7 @@ nav div{
     gap: 20px;
     width: 800px;
     height: 350px;
-    background-color: black;
+    background-color: var(--darkGray);
 }
 
 
@@ -62,3 +64,53 @@ nav div{
 .grow1{
     flex-grow: 1;
 }
+
+
+/* first section */
+section.white, section.gray{
+    display: flex;
+    justify-content: center;
+    gap:10%;
+    padding-block: 10em;
+    background-color: white;
+
+}
+.img-element{
+    width: 600px;
+    height: 500px;
+    background-color: gray;
+}
+
+.text-element{
+    width: 350px;
+    height: 550px;
+    background-color: gray;
+}
+
+section.white .title{
+    height: 60%;
+    background-color: var(--darkGray);
+}
+
+/* second section */
+section.gray{
+    background-color: #808080;
+}
+
+section.gray .img-element{
+    width: 600px;
+    height: 500px;
+    background-color: white;
+}
+
+section.gray .text-element{
+    width: 350px;
+    height: 360px;
+    background-color: white;
+}
+
+section.gray .title{
+    height: 40%;
+    background-color: var(--darkGray);
+}
+
