@@ -6,6 +6,8 @@
 }
 :root{
     --darkGray: #383838;
+    --blackBorder: 2px solid black;
+    --whiteBorder: 2px solid white;;
 
 }
 /* header */
@@ -22,12 +24,13 @@ nav{
 }
 
 /* element dimension */
-#logo, .access, #links{
+.btn{
     flex-basis: 100px;
     height: 50px;
     background-color: var(--darkGray);
-    border: 1px white solid;
+    border:var(--whiteBorder)
 }
+
 #links{
     flex-basis: 30%;
 }
@@ -43,8 +46,6 @@ nav div{
     justify-content: center;
 }
 
-
-/* flexed white banner */
 .inner-banner{
     display: flex;
     flex-direction: column;
@@ -52,20 +53,17 @@ nav div{
     gap: 20px;
     width: 800px;
     height: 350px;
-    background-color: var(--darkGray);
+    border:1px solid black;
 }
-
 
 .sec{
     background-color: white;
     flex-basis: 20%;
-    flex-grow: 0;
+    border: var(--blackBorder);
 }
-.grow1{
+.grow{
     flex-grow: 1;
 }
-
-
 
 .gray{
     background-color:#808080;
@@ -77,6 +75,7 @@ nav div{
 .cont{
     width: 75%;
     margin: 0 auto;
+    
 }
 
 /* first section */
@@ -86,22 +85,28 @@ nav div{
     gap:10%;
     padding-block: 12em;
 }
+
 #first-sec .img-element{
     width: 600px;
     height: 500px;
     background-color: gray;
+    border: var(--blackBorder);
 }
 
 #first-sec .text-element{
     width: 350px;
     height: 550px;
     background-color: gray;
+    border: var(--blackBorder);
 }
 
 #first-sec .title{
     height: 60%;
-    background-color: var(--darkGray);
+    background-color: #383838;
 }
+
+
+
 
 /* second section */
 
@@ -109,12 +114,14 @@ nav div{
     width: 600px;
     height: 500px;
     background-color: white;
+    border: var(--blackBorder);
 }
 
 #second-sec .text-element{
     width: 350px;
     height: 360px;
     background-color: white;
+    border: var(--blackBorder);
 }
 
 
@@ -130,6 +137,7 @@ nav div{
     width: 600px;
     height: 500px;
     background-color: gray;
+    border: var(--blackBorder);
 }
 
 #third-sec .text-element{
@@ -137,6 +145,7 @@ nav div{
     background-color: gray;
     margin-top:2em;
     height: 390px;
+    border: var(--blackBorder);
 }
 
 #third-sec .title{
@@ -151,47 +160,49 @@ nav div{
     flex-direction: column;
     align-items: center;
     padding-block: 12em;
-    gap: 3em;
+    gap: 4em;
 }
 
-.cont-title{
+.container-title{
     height: 200px;
     background-color: white;
+    border: var(--blackBorder);
 }
-.cont-title .title{
+.container-title .fourt-sec-title{
     height: 40%;
     background-color: var(--darkGray);
 }
 
 .fourth-sec-img{
-
+    border: var(--blackBorder);
     height: 500px;
     background-color: white;
+}
+
+.cont-btn .title{
+    height:50%;
+    background-color: var(--darkGray);
 }
 
 .cont-btn{
     height: 150px;
     width: 55%;
     background-color: white;
-}
-.cont-btn .title{
-    height:50%;
-    background-color: var(--darkGray);
+    border: var(--blackBorder);
 }
 
 footer{
     background-color: black;
 }
 
-
-.flex{
+.footer-flex{
     display: flex;
     justify-content: space-between;
     gap: 5px;
 }
 
-.pad{
-    padding-block: 9em;
+.padding-b-7{
+    padding-block: 7em;
 }
 .col{
     height: 500px;
@@ -199,21 +210,16 @@ footer{
     background-color: var(--darkGray);
     border: 1px white solid;
 }
-.mgn{
+
+.footer-first-col{
     width: 30%;   
 }
+
 hr.cont{
     margin-block: 20px;
 }
 
-.flex-f{
+.bottom-footer{
     display: flex;
     justify-content: space-between;
-}
-
-.btn{
-    flex-basis: 100px;
-    height: 50px;
-    background-color: var(--darkGray);
-    border: 1px white solid;
 }
