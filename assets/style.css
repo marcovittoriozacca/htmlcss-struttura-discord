@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 :root{
     --darkGray: #383838;
@@ -67,37 +67,39 @@ nav div{
 
 
 
+.gray{
+    background-color:#808080;
+}
+.white{
+    background-color: white;
+}
+
 
 /* first section */
-.white, .gray{
+.flexbox-row{
     display: flex;
     justify-content: center;
     gap:10%;
-    padding-block: 11em;
+    padding-block: 12em;
 }
-.img-element{
+#first-sec .img-element{
     width: 600px;
     height: 500px;
     background-color: gray;
 }
 
-.text-element{
+#first-sec .text-element{
     width: 350px;
     height: 550px;
     background-color: gray;
 }
 
-.title{
+#first-sec .title{
     height: 60%;
     background-color: var(--darkGray);
 }
 
-
 /* second section */
-.gray{
-    background-color:#808080;
-}
-
 
 #second-sec .img-element{
     width: 600px;
@@ -105,8 +107,8 @@ nav div{
     background-color: white;
 }
 
-
 #second-sec .text-element{
+    width: 350px;
     height: 360px;
     background-color: white;
 }
@@ -119,11 +121,57 @@ nav div{
 
 
 /* third section */
+
+#third-sec .img-element{
+    width: 600px;
+    height: 500px;
+    background-color: gray;
+}
+
 #third-sec .text-element{
+    width: 350px;
+    background-color: gray;
     margin-top:2em;
     height: 390px;
 }
 
 #third-sec .title{
+    background-color: var(--darkGray);
     height: 40%;
 }
+
+/* fourth sec */
+
+.flexbox-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 12em;
+    gap: 3em;
+}
+.cont-title{
+    height: 200px;
+    width: 65%;
+    background-color: white;
+}
+.cont-title .title{
+    height: 40%;
+    background-color: var(--darkGray);
+}
+
+.fourth-sec-img{
+    width:65%;
+    height: 500px;
+    background-color: white;
+}
+
+.cont-btn{
+    height: 150px;
+    width: 35%;
+    background-color: white;
+}
+.cont-btn .title{
+    height:50%;
+    background-color: var(--darkGray);
+}
+
