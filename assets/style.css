@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 :root{
     --darkGray: #383838;
@@ -66,14 +66,14 @@ nav div{
 }
 
 
+
+
 /* first section */
-section.white, section.gray{
+.white, .gray{
     display: flex;
     justify-content: center;
     gap:10%;
-    padding-block: 10em;
-    background-color: white;
-
+    padding-block: 11em;
 }
 .img-element{
     width: 600px;
@@ -87,30 +87,43 @@ section.white, section.gray{
     background-color: gray;
 }
 
-section.white .title{
+.title{
     height: 60%;
     background-color: var(--darkGray);
 }
 
+
 /* second section */
-section.gray{
-    background-color: #808080;
+.gray{
+    background-color:#808080;
 }
 
-section.gray .img-element{
+
+#second-sec .img-element{
     width: 600px;
     height: 500px;
     background-color: white;
 }
 
-section.gray .text-element{
-    width: 350px;
+
+#second-sec .text-element{
     height: 360px;
     background-color: white;
 }
 
-section.gray .title{
+
+#second-sec .title{
     height: 40%;
     background-color: var(--darkGray);
 }
 
+
+/* third section */
+#third-sec .text-element{
+    margin-top:2em;
+    height: 390px;
+}
+
+#third-sec .title{
+    height: 40%;
+}
