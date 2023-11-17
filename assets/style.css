@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+
 }
 :root{
     --darkGray: #383838;
@@ -175,3 +175,43 @@ nav div{
     background-color: var(--darkGray);
 }
 
+footer{
+    background-color: black;
+}
+#cont{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+#cont{
+    padding-block: 9em;
+}
+.col{
+    height: 500px;
+    width: 15%;
+    background-color: var(--darkGray);
+    border: 1px white solid;
+    
+}
+.mgn{
+    width: 30%;   
+}
+
+hr{
+    margin-block: 20px;
+}
+.flex-f{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    flex-basis: 100px;
+    height: 50px;
+    background-color: var(--darkGray);
+    border: 1px white solid;
+}
